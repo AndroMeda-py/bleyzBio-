@@ -1,0 +1,54 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.links a {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #0ff;
+  text-decoration: none;
+  box-shadow: 0 0 15px #0ff;
+  transition: all 0.3s ease;
+}
+.links a:hover {
+  background-color: #0ff;
+  color: #000;
+}
+
+#clickCount {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.star {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 10px yellow;
+  cursor: pointer;
+  animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+  0% { top: -50px; opacity: 1; }
+  100% { top: 100vh; opacity: 0; }
+}
